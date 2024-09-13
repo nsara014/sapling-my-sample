@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Sampling my Sample",
+  title: "Sampling my Sample ",
   description: "Grammer correction app"
 };
 

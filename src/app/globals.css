@@ -1,6 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Cutive&display=swap");
+@font-face {
+  font-family: "MomsTypewriter";
+  src: url("./Momtypefont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   --background: #ffffff;
@@ -16,12 +23,21 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, black 65%, #ccc 45%);
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+@media (max-width: 1024px) {
+  body {
+    background: linear-gradient(to bottom, black 70%, #dfdfdf 30%);
   }
 }
